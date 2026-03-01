@@ -7,8 +7,8 @@ from extract_text import extract_title
 
 def main():
     basepath = sys.argv[1] if len(sys.argv) > 1 else "/"
-    copy_static_to_public("static", "doc")
-    generate_pages_recursive("content", "template.html", "doc", basepath)
+    copy_static_to_public("static", "docs")
+    generate_pages_recursive("content", "template.html", "docs", basepath)
 
 
 def generate_page(from_path, template_path, dest_path, basepath):
